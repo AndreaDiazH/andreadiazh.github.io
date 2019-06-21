@@ -62,6 +62,16 @@ main{
   font-weight: bold;
 }
 
+.typoCursive{
+  font-style: italic;
+}
+
+.colorAccent{
+  color:#00ccc6;
+  font-weight:bold;
+  font-size: 2rem;
+}
+
 .register {
   margin: auto;
 }
@@ -209,6 +219,10 @@ nav ul li a:hover {
   max-width: 60%;
 }
 
+.tagDark{
+  color: #6a6a6a;
+}
+
 .tags{
   border-style: solid;
   border-color: gray;
@@ -285,6 +299,52 @@ nav ul li a:hover {
 
 #contactMe{
   background-color: #353535;
+}
+
+::placeholder {
+  color: #d6d6d6;
+  font-style: italic;
+  font-weight: 200;
+}
+
+form{
+  border-width: thin;
+  border: white;
+  border-style: solid;
+  padding: 2rem;
+  margin: 2rem;
+  overflow: auto;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.formBox{
+  border-radius: .6rem;
+  background-color: transparent;
+  color: #FFF;
+  outline: none;
+  border: 2px solid #00ccc6 ;
+  padding: .7rem;
+  margin: .7rem;
+  width: 20rem;
+}
+
+.contactAsk{
+  color: #cacaca;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.sendBtn{
+  background-color: #00ccc6;
+  border: none;
+  color: #FFF;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  width: 7rem;
+  font-weight: bold;
 }
 
 #proyects{
