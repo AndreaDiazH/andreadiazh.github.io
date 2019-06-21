@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/* ----------------Desktop main style--------------*/
+main{
+  padding-top:3.125rem;
+ /* display:flex; */
+  background-image: url(./resources/codeback.jpg);
+  background-position: 0% 93%;
+  background-size:cover;
+  justify-content: flex-end;
+  color: white;
+  
+}
+
+.main-title{
+  font-size: 2rem;
+  display:block;
+}
+
+.prf2{
+  display: none;
+}
+
+.subtIndex {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#logo-begin{
+  width: 4rem;
+  height:  1rem;
+}
+
+.register{
+ /* margin: 4rem 0rem 8rem; */
+  padding: 2rem 7rem 2.5rem 2rem;
+  min-height: 400px;
+ /* text-align: left;
+  color: #31363b;
+/*  background-color: #f7b617;*/
+  font-size: 2.5rem ;
+}
+
+.name{
+  color:#00ccc6;
+  font-size: 3rem;
+  font-weight:bold;
+}
+
+.tech, .arts{
+  color: #FFF;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.register {
+  margin: auto;
+}
+
+.introTxt {
+  padding: 7rem 0rem 0rem 7rem;
+  margin: 4rem
+  float: left;
+}
+.rowIcons {
+  margin-left: 85%;
+  margin-top: -150px;
+  height: 200px;
+}
+
+.mobile{
+  display:none;
+}
+
+.mobile-text{
+  display:none;
+}
+
+
+/* ----------------Mobile main style--------------*/
+
+@media screen and (max-width: 800px){
+  
+  .prf2{
+    display: block;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .mobile-text{
+    display:block;
+  }
+  
+  .main-title{
+    display:none;
+  }
+  
+  .mobile{
+    display:block;
+  }
+  
+  .webBtn{
+    display:none;
+  }
+  
+  .lines{
+    display:none;
+  }
+  
+  main {
+    height: 28rem;
+  }
+  
+}
+
+
+/* ----------------Desktop nav style--------------*/
+header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  padding: 0.625rem 1.25rem;
+  height: 3.125rem;
+  background-color: #2b2b2b;
+  background-size: cover;
+  width: 100%
+}
+
+nav {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: #2b2b2b;
+  display: flex;
+}
+
+nav ul {
+  overflow: hidden;
+  list-style: none;
+}
+
+nav ul li {
+  float:right;
+}
+
+nav ul li a{
+  
+  font-size: 1rem;
+  color: #FFF;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background: #00ccc6;
+}
+
+.hamburger {
+  display: none;
+}
+
+
+/* ----------------Mobile nav style--------------*/
+@media screen and (max-width:800px) {
+  
+  nav {
+    display: none;
+  }
+  
+  .hamburger {
+    display: block;
+    margin-right: 0.9375rem;
+    cursor: pointer;
+  }
+  
+  .fa-bars {
+    color: #2B2B2B;
+    border: 1px solid #2b2b2b;
+    padding: 6px;
+    border-radius: 5px;
+  }
+}
+
+.greetings{
+  border-style: solid;
+  border-color: gray;
+  border-width: thin;
+  text-align: center;
+  margin: 3rem;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #6a6a6a;
+  font-weight: 500;
+  width: 9rem;
+  float: left;
+  max-width: 60%;
+}
+
+.tags{
+  border-style: solid;
+  border-color: gray;
+  border-width: thin;
+  text-align: center;
+  margin: 3rem;
+  padding: 1rem;
+  font-size: 1.7rem;
+  color: #cacaca;
+  font-weight: 500;
+  width: 13rem;
+}
+
+.titles{
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  justify-content: center;
+}
+
+.bioTxt {
+  font-size: 1.3rem;
+  color: #6a6a6a;
+  text-align: left;
+  float: right;
+  margin-left: 3rem;
+}
+
+.bioPic {
+  padding-top: 4rem;
+  padding-left: 2rem;
+  max-width: 33%;
+  float: left;
+  
+}
+.downloadInfo{
+  overflow: auto;
+}
+
+.aboutme{
+  min-height: 500px;
+}
+
+.bioInfo{
+  float: left;
+  max-width: 60%;S
+}
+
+#skills{
+  background-color: #353535;
+  min-height: 610px;
+}
+
+.skillIcon{
+  overflow: auto;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.sum{
+  color: #00ccc6;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.describe{
+  color: #FFF;
+  font-size: .9rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+#contactMe{
+  background-color: #353535;
+}
+
+#proyects{
+  background-color: #FFF;
+  min-height: 500px;
+}
