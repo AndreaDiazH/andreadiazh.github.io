@@ -14,18 +14,17 @@
 <body>
    <!------------------------NAV---------------------------------------->
     <header class="nav-top">
-        <span id="menuBtn" class="hamburger material-icons" ><i class="fas fa-bars"></i></span>
         <span> <img src="./resources/letteraqua2.png" /> </span>
-        <nav id="id01">
+        <nav>
             <ul>
-              <li><a id="loginLink" href="#contactSecc"> Contacto</a></li>
-              <li><a href="#proyects">Portafolio </a> </li>
-              <li><a href="#skills">Habilidades </a> </li>
-              <li> <a href="#aboutme"> Sobre Mi </a> </li>
+              <li><a id="tag1" href="#contactMe"> Contacto</a></li>
+              <li><a id="tag2" href="#proyects">Portafolio </a></li>
+              <li><a id="tag3" href="#skills">Habilidades </a></li>
+              <li><a id="tag4" href="#aboutMe"> Sobre Mi </a></li>
             </ul>
         </nav>
     </header>
-    <!------------------------SECC NAME---------------------------------------->
+    <!---------------SECC NAME------------------------------>
     <main>
         <div class="register">
             <div class="introTxt">
@@ -43,7 +42,7 @@
         </div>
     </main>
     <!------------------------SECC ABOUT ME-------------------------------------->
-    <section class="aboutme">
+    <section class="aboutMe">
         <div class="downloadInfo">
           <div class="bioPic">
             <span> <img src="./resources/semblanzaA.png" /> </span>
@@ -114,7 +113,7 @@
         <br>
         <textarea placeholder= "Escribir mensaje..." class="formBox" rows="5" cols="30"></textarea>
         <br>
-        <button class="sendBtn">enviar</button>
+        <button id= "sendMail" class="sendBtn">enviar</button>
       </form>
     </div>
     </div>
@@ -127,8 +126,10 @@
       </div>
     </section>
 
-<script src="./js/app.js"></script>
-
+<script src= "contact.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+<script src="sweetalert2.all.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
 </body>
 
 </html>
