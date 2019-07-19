@@ -23,7 +23,10 @@ function validateInfo () {
 
   } else {
     sendEmail();
+    let frm = document.getElementById("contactFrm");
+    frm.reset();
   };
+ 
 }
 
 function sendEmail () {
@@ -37,4 +40,6 @@ function sendEmail () {
     })
    
 }
+
+
  
