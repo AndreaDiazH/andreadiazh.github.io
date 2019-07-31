@@ -41,5 +41,21 @@ function sendEmail () {
    
 }
 
+function showElement (barra) {
+    barra.style.display = "block";
+}
+
+function hideElement (barra) {
+    barra.style.display = "none";
+}
+
+function toggle (){
+    let barraMenu = document.getElementById("toggleBar");
+    if(window.getComputedStyle(barraMenu).display === 'block'){
+        hideElement(barraMenu);
+    } else {
+        showElement(barraMenu);
+    }
+} 
 
  
