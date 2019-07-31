@@ -11,7 +11,6 @@
 /* ----------------Desktop main style--------------*/
 main{
   padding-top:3.125rem;
- /* display:flex; */
   background-image: url(./resources/codeback.jpg);
   background-position: 0% 93%;
   background-size:cover;
@@ -20,30 +19,6 @@ main{
   
 }
 
-#tag1{
-    padding-left: 38rem;
-    
-}
-
-.main-title{
-  font-size: 2rem;
-  display:block;
-}
-
-.prf2{
-  display: none;
-}
-
-.subtIndex {
-  font-size: 1.3rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-#logo-begin{
-  width: 4rem;
-  height:  1rem;
-}
 
 .register{
   padding: 2rem 7rem 2.5rem 2rem;
@@ -83,27 +58,53 @@ main{
   float: left;
 }
 
-@media only screen and (max-width: 600px) {
-    .register{
-        margin-left: 95%;
-        margin-top: -150px;
-        height: 100px; 
-    }
-    
+.skillIcon{
+  overflow: auto;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  
 }
+
+.proyectInfo{
+   padding-left: 33rem;
+   padding-top: 2.5rem;
+}
+
+.cover{
+  float:left;  
+}
+
+    .introTxt{
+    display: block;
+}
+
+.introTxt2{
+    display: none;
+}
+
+.formBox{
+    border-radius: .6rem;
+    background-color: transparent;
+    color: #FFF;
+    outline: none;
+    border: 2px solid #00ccc6 ;
+    padding: .7rem;
+    margin: .7rem;
+    width: 20rem;
+}
+
+.coverTwo {
+    display: none;
+}
+
+
 .rowIcons {
   margin-left: 85%;
   margin-top: -150px;
   height: 200px;
   
-}
-
-.mobile{
-  display:none;
-}
-
-.mobile-text{
-  display:none;
 }
 
 
@@ -155,11 +156,6 @@ nav ul li a:hover {
     border-width: thin;
     padding: .5rem;
 }
-
-
-
-
-/* ----------------Mobile nav style--------------*/
 
 .greetings{
   border-style: solid;
@@ -225,7 +221,7 @@ nav ul li a:hover {
 
 .bioInfo{
   float: left;
-  max-width: 60%;S
+  max-width: 60%;
 }
 
 #skills{
@@ -233,13 +229,6 @@ nav ul li a:hover {
   min-height: 610px;
 }
 
-.skillIcon{
-  overflow: auto;
-  align-content: center;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-}
 
 .sum{
   color: #00ccc6;
@@ -284,7 +273,7 @@ form{
   border: 2px solid #00ccc6 ;
   padding: .7rem;
   margin: .7rem;
-  width: 20rem;
+  /*width: 20rem;*/
 }
 
 .contactAsk{
@@ -318,3 +307,247 @@ form{
   padding: .4rem;
 
 }
+
+
+    #securityInfo{
+    color: #d6d6d6;
+    font-style: italic;
+    font-weight: 200;
+    padding-top: 1rem;
+    }
+
+    .fas {
+        color: #00ccc6;
+    }
+    
+    .nav-responsive{
+        display: none;
+    }
+
+
+/*------mobile medias------*/
+@media only screen and (max-width: 426px){
+     header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 100;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        height: 3.125rem;
+        background-color: #2b2b2b;
+        background-size: cover;
+        width: 100%
+    }
+    
+    header span{
+        margin: 1rem;
+    }
+    
+
+    .nav-normal{
+        display: none;
+        top: 3rem;
+        position: absolute;
+        width: 8rem;
+        right: 0rem;
+    }    
+    
+    .nav-responsive{
+        display: flex;
+        margin-right: 2rem;
+    }
+    
+    
+    .introTxt2{
+        display: none;
+    }
+    
+    .introTxt{
+        padding: 3rem;
+    }
+    
+    .colorAccent, .tech, .arts{
+        font-size: 1.6rem;
+    }
+    
+    .name{
+        font-size: 1.8rem;
+    }
+
+    .bioPic {
+        display: none;
+    }
+    
+    .bioInfo {
+        margin-left: 4rem;
+    }
+    
+    .bioTxt {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .greetings {
+        margin: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .proyectInfo{
+        padding: 0rem;
+    }
+    .register{
+        padding: 2rem 5rem 2.5rem 0rem;
+    }
+    
+     .formBox{
+        border-radius: .6rem;
+        background-color: transparent;
+        color: #FFF;
+        outline: none;
+        border: 2px solid #00ccc6 ;
+        padding: .7rem;
+        margin: .7rem;
+        width: 13rem;
+    }
+    
+    #contactFrm {
+        margin: 2rem;
+        padding: 1rem;
+        border-style: none;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+    
+    .coverTwo{
+        display: block;
+        height: 16rem;
+    }
+    
+    .cover {
+        display: none;
+    }
+    
+    .proyectInfo{
+        display: none;
+    }
+    
+    .sum {
+        display: none;
+    }
+    
+    .skillIcon{
+        overflow: auto;
+        align-content: center;
+        justify-content: center;
+        display: grid;
+        align-items: center;
+    }
+    
+    .skillIcon img{
+        width: 100%;
+    }
+    
+    .describe{
+        margin-bottom: 1rem;
+    }
+
+}
+
+
+/*----tablet medias-----*/
+@media only screen and (max-width: 769px) and (min-width: 426px){
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 100;
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        height: 3.125rem;
+        background-color: #2b2b2b;
+        background-size: cover;
+        width: 100%
+    }
+    
+    header span{
+        margin: 1rem;
+    }
+    
+
+    .nav-normal{
+        display: none;
+        top: 3rem;
+        position: absolute;
+        width: 8rem;
+        right: 0rem;
+    }    
+    
+    .nav-responsive{
+        display: flex;
+        margin-right: 2rem;
+    }
+
+     .introTxt{
+        display: none;
+    }
+    
+    .introTxt2{
+       display: block;
+       padding: 3rem;
+    }
+    
+      .colorAccent, .tech, .arts{
+        font-size: 1.5rem;
+    }
+    
+    .name{
+        font-size: 1.8rem;
+    }
+    
+     .formBox{
+        border-radius: .6rem;
+        background-color: transparent;
+        color: #FFF;
+        outline: none;
+        border: 2px solid #00ccc6 ;
+        padding: .7rem;
+        margin: .7rem;
+        width: 13rem;
+    }
+    
+    .bioTxt{
+        margin-left: 8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .bioPic{
+        margin: 0rem;
+    }
+    
+    .proyectInfo{
+        padding-left: 1rem;
+    }
+    
+    .cover{
+        float: inherit;
+    }
+    
+    .pics{
+        text-align: center;
+    }
+    
+    
+    #contactFrm {
+        margin-left: 14rem;
+        margin-right: 14rem;
+    }
+}
+
+

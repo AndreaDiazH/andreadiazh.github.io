@@ -9,13 +9,15 @@
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Andrea Díaz Hernández</title>
 </head>
 <body>
    <!------------------------NAV---------------------------------------->
     <header class="nav-top">
         <span> <img src="./resources/letteraqua2.png" /> </span>
-        <nav>
+        
+        <nav id="toggleBar" class= "nav-normal">
             <ul>
               <li><a id="tag1" href="#contactMe"> Contacto</a></li>
               <li><a id="tag2" href="#proyects">Portafolio </a></li>
@@ -23,11 +25,21 @@
               <li><a id="tag4" href="#aboutMe"> Sobre Mi </a></li>
             </ul>
         </nav>
+        
+        <div onclick= "toggle()" class= "nav-responsive">
+            <i class="fas fa-bars"></i>
+        </div>
+
     </header>
     <!---------------SECC NAME------------------------------>
     <main>
         <div class="register">
             <div class="introTxt">
+             <p class="name">Andrea Díaz Hernández</p>
+             <span><p class="tech">programación <span class= "typoCursive">front <span class="colorAccent">-</span> end</span></p></span>
+             <p class="arts"><span class= "typoCursive">fotografía</span> profesional.</p>
+            </div>
+            <div class="introTxt2">
              <p class="name">Andrea Díaz Hernández</p>
              <span><p class="tech">programación <span class= "typoCursive">front <span class="colorAccent">-</span> end</span></p></span>
              <p class="arts"><span class= "typoCursive">fotografía</span> profesional.</p>
@@ -65,10 +77,10 @@
     <!------------------------SECC SKILLS--------------------------------------->
     <section id="skills">
         <div>
-            <div class="driverInfo">
                <div class="titles">
                   <p class="tags"> <span class="colorAccent"><</span>Habilidades<span class="colorAccent">></span> </p>
               </div>
+              <div class="driverInfo">
                 <div class= "skillIcon">
                   <span> 
                     <img src="./resources/faceaqua2.png" /> 
@@ -99,16 +111,52 @@
     </div>
     <div id= "proyectsImg">
         <div class= "pics"> 
-           <a href="https://andreadiazh.github.io/gdl-2019-01-bc-core-cipher/src/"><img src="./resources/cipher.png" /></a> 
+            <div class= "cover">
+                <a href="https://andreadiazh.github.io/gdl-2019-01-bc-core-cipher/src/"><img src="./resources/cipher.png" /></a>
+            </div>
+            <div class= "coverTwo">
+                <a href="https://andreadiazh.github.io/gdl-2019-01-bc-core-cipher/src/"><img src="./resources/cover1.png" /></a>
+            </div>
+            <div class="proyectInfo">
+                <p class="tagDark"> <span class="colorAccent"><</span>Cipher<span class="colorAccent">></span> </p>
+                <p> Un codificador de textos, pensando para escritores noveles que desean manetener en secreto sus textos sin publicar antes de que salgan al publico. </p>
+            </div>
+        </div>
+        <div class= "pics">
+            <div class= "cover">
+                <a href="https://andreadiazh.github.io/GDL002-data-lovers/src/"><img src="./resources/datalovers.png" /></a>
+            </div>
+            <div class= "coverTwo">
+                <a href="https://andreadiazh.github.io/GDL002-data-lovers/src/"><img src="./resources/cover2.png" /></a>
+            </div>
+            <div class="proyectInfo">
+                <p class="tagDark"> <span class="colorAccent"><</span>IN-BIKE-ME<span class="colorAccent">></span> </p>
+                <p> Es una plataforma para invitar a nuevos ciclistas a conocer las estadisticas de accidentes anualmente, de esta manera considerar enserio el uso de la bicicleta como transpore primario.  </p>
+            </div>
         </div>
         <div class= "pics"> 
-           <a href="https://andreadiazh.github.io/GDL002-data-lovers/src/"><img src="./resources/datalovers.png" /></a>
+            <div class= "cover">
+                <a href="https://andreadiazh.github.io/GDL002-visitors/src/"><img src="./resources/visitors.png" /></a>
+            </div>
+             <div class= "coverTwo">
+                <a href="https://andreadiazh.github.io/GDL002-visitors/src/"><img src="./resources/cover4.png" /></a>
+            </div>
+            <div class="proyectInfo">
+                <p class="tagDark"> <span class="colorAccent"><</span>Colombe<span class="colorAccent">></span> </p>
+                <p> Web app para registro de visitantes, que tomara su fotografía y creara un registro de la visita, pudiendo hacer con esa información estadisticas informativas además de enviar correos de notificiación para los clientes que son visitados.</p>
+            </div>
         </div>
         <div class= "pics"> 
-           <a href="https://andreadiazh.github.io/GDL002-visitors/src/"><img src="./resources/visitors.png" /></a>
-        </div>
-        <div class= "pics"> 
-           <a href="https://andreadiazh.github.io/GDL002-burger-queen/"><img src="./resources/burguerqueen.png" /></a>
+            <div class= "cover">
+                <a href="https://andreadiazh.github.io/GDL002-burger-queen/"><img src="./resources/burguerqueen.png" /></a>
+            </div>
+            <div class= "coverTwo">
+                <a href="https://andreadiazh.github.io/GDL002-burger-queen/"><img src="./resources/cover3.png" /></a>
+            </div>
+            <div class="proyectInfo">
+                <p class="tagDark"> <span class="colorAccent"><</span>BurguerQueen<span class="colorAccent">></span> </p>
+                <p> Webapp desarrollada en reactJS para manejo de comandas en un restaurante. Desde tomar pedidos hasta su manejo en cocina. </p>
+            </div>
         </div>
     </div>
     </div>
@@ -132,6 +180,7 @@
         <textarea placeholder= "Escribir mensaje..." class="formBox" rows="5" cols="30"></textarea>
         <br>
         <button id= "sendMail" class="sendBtn">enviar</button>
+        <p id= "securityInfo">* Todos los datos que sean ingresados son totalmente privados. </p>
       </form>
     </div>
     </div>
