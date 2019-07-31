@@ -173,13 +173,13 @@
     <div class= "contactForm">
       <form id= "contactFrm">
         <span><p class="contactAsk">¿Te gustaria <span class="typoCursive">contactarme</span>? Envía un mensaje </p></span>
-        <input type="name" placeholder= "Nombre completo" class="formBox" />
+        <input id="name" type="name" placeholder= "Nombre completo" class="formBox" />
         <br>
-        <input type="email" placeholder= "Correo electrónico" class="formBox" />
+        <input id="mailto" type="email" placeholder= "Correo electrónico" class="formBox" />
         <br>
-        <textarea placeholder= "Escribir mensaje..." class="formBox" rows="5" cols="30"></textarea>
+        <textarea id= "msj" placeholder= "Escribir mensaje..." class="formBox" rows="5" cols="30"></textarea>
         <br>
-        <button id= "sendMail" class="sendBtn">enviar</button>
+        <button onclick="sendEmail()" id= "sendMail" class="sendBtn">enviar</button>
         <p id= "securityInfo">* Todos los datos que sean ingresados son totalmente privados. </p>
       </form>
     </div>
